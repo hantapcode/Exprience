@@ -1,0 +1,101 @@
+:root{
+    --primary-color:#4daf54;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #4daf54, #3d8880);
+    height: 100vh;
+    overflow: hidden;
+    font-size: 25px;
+}
+.card{
+    background: #272d40;
+    color: white;
+    width: 400px;
+    height: 500px;
+    margin: 300px auto;
+    border-radius: 10px;
+    padding: 25px;
+    position: relative;
+}
+.card__heart,.card__cart{
+ font-size: 30px;
+ cursor: pointer;
+ position: absolute;
+ align-items: center;
+}
+.card__cart{
+   right: 25px;
+}
+.card__image{
+    width:90%;
+    height: 70%;
+    margin-left: 20px;
+}
+.card__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.card__tittle{
+    position: absolute;
+    top: 52%;
+    color: var(--primary-color);
+}
+.card__price{
+    position: absolute;
+    top: 59%;
+}
+
+.card__size{
+    display: flex;
+    align-items: center;
+}
+.card__size span{
+    background: grey;
+    margin: 0 5px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+.card__color{
+    display: flex;
+    margin: 10px 0;
+}
+.card__color span{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin: 6px 5px;
+    cursor: pointer;
+
+}
+.card__color span.green{
+    background-color: green;
+}
+.card__color span.red{
+    background-color: red;
+}
+.card__color span.black{
+    background-color: black;
+}
+.card__button{
+    position: absolute;
+    right: 25px;
+}
+
+.card__button button{
+    background: var(--primary-color);
+    color: white;
+    padding: 15px 20px;
+    cursor: pointer;
+}
