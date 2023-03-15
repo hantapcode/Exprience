@@ -37,26 +37,48 @@ body{
     width:90%;
     height: 70%;
     margin-left: 20px;
+   
 }
 .card__image img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+    transition: 1s;
 }
+
+.card:hover .card__image img{
+    transform:  translateY(-130px) rotate(-35deg);
+}
+
 .card__tittle{
     position: absolute;
     top: 52%;
+    left: 21%;
     color: var(--primary-color);
+    transition: 1s;
 }
 .card__price{
     position: absolute;
     top: 59%;
+    left: 40%;
+    transition: 1s;
 }
+.card:hover .card__tittle{
+top:40%;
+left: 25px;
+}
+.card:hover .card__price{
+    top:47%;
+    left: 25px;
+    }
 
 .card__size{
     display: flex;
     align-items: center;
+    margin-top: 180px;
+    transition: 1s;
+
 }
 .card__size span{
     background: grey;
@@ -64,12 +86,13 @@ body{
     padding: 0px 10px;
     border-radius: 5px;
     cursor: pointer;
-
 }
 
 .card__color{
     display: flex;
     margin: 10px 0;
+    transition: 1s;
+
 }
 .card__color span{
     width: 25px;
@@ -90,7 +113,8 @@ body{
 }
 .card__button{
     position: absolute;
-    right: 25px;
+    left: 25px;
+    transition: 1s;
 }
 
 .card__button button{
@@ -98,4 +122,18 @@ body{
     color: white;
     padding: 15px 20px;
     cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.card__size, .card__color , .card__button {
+    opacity: 0;
+    visibility: hidden;
+}
+.card:hover .card__size,.card:hover .card__color,.card:hover .card__button{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover .card__size{
+    margin-top: 0px;
 }

@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+}
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+  }
+
+body{
+    height: 100vh;
+    display: flex;
+}
+.wrraper{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 360px auto;
+    justify-content: space-between;
+}
+.wrraper .image{
+    width: 22%;
+    height: 200px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 30px;
+    
+}
+.wrraper .image img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+   border: none;
+   outline: none;
+   transition: 0.5s;
+}
+.wrraper .image:hover img{
+    transform: scale(1.3);
+}
